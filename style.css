@@ -29,8 +29,12 @@ div {
   align-items: center;
   justify-content: center;
 }
+header a {
+  color: black;
+}
 main {
   align-self: center;
+  max-width: 800px;
 }
 .line {
   border: 2px solid #4cbb17;
