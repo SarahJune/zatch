@@ -15,6 +15,7 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  font-family: 'Open Sans', sans-serif;
 }
 body:before, body:after {
   content: "";
@@ -47,7 +48,7 @@ main {
   justify-content: center;
   flex-direction: column;
   display: flex;
-  padding: 150px 0;
+  padding: 150px 25px;
 }
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Major Mono Display', 'Open Sans', sans-serif;
@@ -55,6 +56,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 h1 {
   text-align: center;
+  font-size: 48px;
 }
 p {
   font-family: 'Open Sans', sans-serif;
@@ -64,8 +66,18 @@ p {
   margin-bottom: 2rem;
   font-size: 1.2rem;
 }
+a {
+  color: black;
+  font-weight: 900;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
 .media {
   margin: 50px 0;
+    width: 700px;
+    height: 400px;
 }
 .home {
   text-align: center;
@@ -78,7 +90,7 @@ p {
   width: 40px;
   margin: auto;
   border-radius: 4px;
-  margin: 20px auto;
+  margin: 10px auto;
 }
 .enter {
   text-align: center;
@@ -102,7 +114,6 @@ p {
 }
 .grid p {
   width: 100%;
-  padding: 75px;
   box-sizing: border-box;
   background-color: white;
   margin: 25px;
@@ -118,7 +129,9 @@ p {
   color: black;
   text-decoration: none;
   font-weight: 700;
+  padding: 75px;
   font-family: 'Major Mono Display', 'Open Sans', sans-serif;
+  display: block;
 }
 .back-button {
   background: white;
@@ -148,7 +161,41 @@ p {
 }
 .questions {
   max-width: 650px;
+  font-family: 'Open Sans', sans-serif;
 }
 .questions li {
   margin: 12px 0;
+}
+.quote {
+  margin: 25px auto;
+  max-width: 300px;
+}
+.quote p {
+  margin: 0;
+  font-family: monospace;
+}
+.attribution {
+  font-size: 1rem;
+  padding: 15px;
+}
+
+@media screen and (max-width: 800px) {
+  .media {
+    width: 560px;
+    height: 315px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .media {
+    width: 400px;
+    height: 200px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .media {
+    width: 300px;
+    height: 150px;
+  }
 }
