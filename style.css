@@ -105,25 +105,20 @@ a:hover {
 .index {
   text-align: center;
   margin: auto;
+  width: 100%;
 }
 .grid {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-around;
   flex-wrap: wrap;
 }
-.grid p {
+.grid .accordion {
   width: 100%;
   box-sizing: border-box;
   background-color: white;
   margin: 25px;
   transition: all .5s ease;
-}
-.grid p:hover {
-  transform: scale(1.05);
-  cursor: pointer;
-}
-.grid p a {
   align-self: center;
   justify-content: center;
   color: black;
@@ -133,15 +128,20 @@ a:hover {
   font-family: 'Major Mono Display', 'Open Sans', sans-serif;
   display: block;
 }
+.grid .accordion:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
 .back-button {
   background: white;
-  padding: 10px 20px;
   cursor: pointer;
   border-radius: 5%;
   text-transform: uppercase;
   font-size: 12px;
-  margin: 50px 0;
+  margin: 50px auto;
   display: inline-block;
+  text-align: center;
+  justify-content: space-around;
   vertical-align: middle;
   -webkit-transform: perspective(1px) translateZ(0);
   transform: perspective(1px) translateZ(0);
@@ -158,10 +158,13 @@ a:hover {
 .back-button a {
   color: black;
   text-decoration: none;
+  padding: 10px 20px;
+  display: block;
 }
 .questions {
   max-width: 650px;
   font-family: 'Open Sans', sans-serif;
+  text-align: left;
 }
 .questions li {
   margin: 12px 0;
@@ -177,6 +180,26 @@ a:hover {
 .attribution {
   font-size: 1rem;
   padding: 15px;
+}
+p.accordion {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+  margin-bottom:10px;
+}
+div.panel {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: 0.4s ease-in-out;
+  opacity: 0;
+  margin-bottom:10px;
+}
+
+div.panel.show {
+    opacity: 1;
+    max-height: 10000px; /* Whatever you like, as long as its more than the height of the content (on all screen sizes) */
 }
 
 @media screen and (max-width: 800px) {
