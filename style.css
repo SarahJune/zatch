@@ -77,7 +77,7 @@ a:hover {
 .media {
   margin: 50px 0;
     width: 700px;
-    height: 400px;
+    height: 394px;
 }
 .home {
   text-align: center;
@@ -219,6 +219,6 @@ div.panel.show {
 @media screen and (max-width: 420px) {
   .media {
     width: 300px;
-    height: 150px;
+    height: 169px;
   }
 }
