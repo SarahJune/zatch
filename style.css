@@ -48,7 +48,7 @@ main {
   justify-content: center;
   flex-direction: column;
   display: flex;
-  padding: 150px 25px;
+  width: 100%;
 }
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Major Mono Display', 'Open Sans', sans-serif;
@@ -93,8 +93,9 @@ a:hover {
   margin: 10px auto;
 }
 .enter {
-  text-align: center;
-  padding: 35px 20px;
+  text-align: left;
+  align-items: start;
+  width: 100%;
 }
 .enter a {
   color: #000000;
@@ -105,7 +106,7 @@ a:hover {
 .index {
   text-align: center;
   margin: auto;
-  width: 100%;
+  padding: 150px 25px;
 }
 .grid {
   display: flex;
@@ -170,7 +171,7 @@ a:hover {
   margin: 12px 0;
 }
 .quote {
-  margin: 25px auto;
+  margin: 25px auto 0 auto;
   max-width: 300px;
 }
 .quote p {
