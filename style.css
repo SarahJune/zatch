@@ -15,7 +15,7 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  font-family: 'Open Sans', sans-serif;
+  font-family: monospace;
 }
 body:before, body:after {
   content: "";
@@ -51,7 +51,7 @@ main {
   width: 100%;
 }
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Major Mono Display', 'Open Sans', sans-serif;
+  font-family: 'Major Mono Display', monospace;
   margin: 20px;
 }
 h1 {
@@ -59,7 +59,7 @@ h1 {
   font-size: 72px;
 }
 p {
-  font-family: 'Open Sans', sans-serif;
+  font-family: monospace;
   margin: 0 auto;
   max-width: 800px;
   line-height: 2rem;
@@ -100,8 +100,7 @@ a:hover {
 .enter a {
   color: #000000;
   color: rgba(0, 0, 0, 0);
-  padding: 30px 20px;
-  margin: 15px;
+  padding: 50px;
 }
 .index {
   text-align: center;
@@ -126,7 +125,7 @@ a:hover {
   text-decoration: none;
   font-weight: 700;
   padding: 75px;
-  font-family: 'Major Mono Display', 'Open Sans', sans-serif;
+  font-family: 'Major Mono Display', monospace;
   display: block;
 }
 .grid .accordion:hover {
@@ -164,7 +163,7 @@ a:hover {
 }
 .questions {
   max-width: 650px;
-  font-family: 'Open Sans', sans-serif;
+  font-family: monospace;
   text-align: left;
 }
 .questions li {
