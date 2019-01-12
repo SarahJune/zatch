@@ -106,7 +106,9 @@ a:hover {
 .index {
   text-align: center;
   margin: auto;
+  box-sizing: border-box;
   padding: 150px 25px;
+  width: 100%;
 }
 .grid {
   display: flex;
@@ -115,7 +117,7 @@ a:hover {
   flex-wrap: wrap;
 }
 .grid .accordion {
-  width: 100%;
+  width: 90%;
   box-sizing: border-box;
   background-color: white;
   margin: 25px;
