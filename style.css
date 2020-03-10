@@ -1,8 +1,8 @@
 @import 'normalize.css';
 @import 'rotate.css';
+@import 'store.css';
 
 html {
-  background: linear-gradient(rgba(255,255,255,.6),rgba(255,255,255,.6)), url("img/mountains-1.jpg") top center no-repeat;
   background-size: cover;
   box-sizing: border-box;
   background-attachment: fixed;
@@ -53,7 +53,7 @@ main {
 }
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Major Mono Display', monospace;
-  margin: 20px;
+  margin: 20px 0;
 }
 h1 {
   text-align: center;
@@ -83,8 +83,10 @@ a:hover {
 .home {
   text-align: center;
   display: flex;
-  justify-content: space-between;
   flex-direction: column;
+  height: 100vh;
+  background: linear-gradient(rgba(255,255,255,.6),rgba(255,255,255,.6)), url("img/mountains-1.jpg") top center no-repeat;
+  background-size: cover;
 }
 .line {
   border: 2px solid #4cbb17;
