@@ -4,13 +4,20 @@
 }
 .store h2 {
   font-family: 'Quicksand', sans-serif;
+  line-height: 1.3em;
+  margin: 0;
+  font-size: 32px;
+}
+.store h3 {
+  font-family: 'Quicksand', sans-serif;
   line-height: 1.5em;
-  margin-bottom: 10px;
+  margin: 0;
 }
 .store p, button {
   font-size: 16px;
   line-height: 1.5em;
   font-family: 'Lato', sans-serif;
+  margin-top: 25px;
 }
 button {
   padding: 20px;
@@ -36,5 +43,19 @@ button a {
 }
 .description {
   box-sizing: border-box;
-  padding: 50px;
+  padding: 50px 0;
+}
+@media screen and (max-width: 1100px) {
+  .description {
+    padding: 0px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .item {
+    padding: 5px;
+  }
+  .description {
+    padding: 5px;
+  }
 }
